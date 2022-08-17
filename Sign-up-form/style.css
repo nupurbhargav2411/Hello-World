@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/*CSS Reset*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 100%, 74%);
+    background-image: url('./images/bg-intro-desktop.png');
+    background-size: contain;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+main {
+    -webkit-display:grid;
+    display: grid;
+    grid-template-columns: 32rem 1fr;
+    margin: 7.5rem auto;
+    width: min(87.2%, 70rem);
+    gap: 4rem;   
+}
+
+.content-text {
+    padding-left: 0.3rem;
+    margin-top: 11rem;
+}
+
+.title {
+        font-weight: 700;
+        font-size: 3.1rem;
+        line-height: 1.1;
+        margin-bottom: 1.75rem;
+}
+
+.paragraph {
+    line-height: 1.6;
+}
+
+.content-form {
+    -webkit-display:flex;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.try-button {
+    background-color: hsl(248, 32%, 49%);
+    color: #fff;
+    width: 100%;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    box-shadow: 0 0.5rem rgba(0,0,0,0.175);
+    border-radius: 10px;
+    padding: 1.225rem 0;
+    text-align: center;
+}
+
+.form {
+    background-color: #fff;
+    color: hsla(249,10%,26%,0.75);
+    border-radius: 10px;
+    padding: 2.5rem;
+    text-align: center;
+    box-shadow: 0 0.5rem rgba(0,0,0,0.175);
+}
+
+label {
+    position: absolute;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+input {
+    font-family: "Poppins" , sans-serif;
+    color:hsl(249, 10%, 26%);
+    font-weight: 500;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid hsla(246,25%,77%,0.5);
+    padding: 1rem 2rem;
+    outline: none;
+    caret-color: hsl(249, 10%, 26%);
+    font-size: 0.9rem;
+}
+
+.error-icon {
+    position: absolute;
+    margin-top: 1rem;
+    right: 3rem;
+    display: none;
+}
+
+
+.error-message {
+    display: none;
+    color: hsl(0, 100%, 74%);
+    font-size: 0.7rem;
+    font-style: italic;
+    text-align: right;
+    margin-top: 0.25rem;
+}
+
+input:focus {
+    border: 1px solid hsl(248, 32%, 49%);
+}
+
+.emphasized {
+    font-weight: 700;
+}
+
+.form-element {
+    margin: 1.25rem 0;
+    position: relative;
+}
+
+.form-element:first-of-type {
+    margin-top: 0;
+}
+
+.form-element:last-of-type {
+    margin-bottom: 0;
+}
+
+.display-error {
+    border: 1px solid hsl(0, 100%, 74%);
+    color:hsl(0, 100%, 74%);
+}
+
+.claim {
+    background-color: hsl(154, 59%, 51%);
+    color: #fff;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    box-shadow: 0 0.2rem hsl(154, 51%, 43%);
+    border-radius: 5px;
+    border: none;
+    padding: 1.2rem 0;
+}
+
+.claim:hover {
+    cursor: pointer;
+    background-color: hsla(154,59%,51%,0.6);
+}
+
+.terms {
+    color:hsl(246, 25%, 77%);
+    font-size: 0.7rem;
+    padding: 1rem 0 0;
+}
+
+.link {
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/**Footer Section*/
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a{
+    color:hsl(228,45%,44%);
+}
+
+/*Media Queries*/
+@media screen and (max-width:1200px) {
+    body {
+        background-image:url('./images/bg-intro-mobile.png');
+    }
+    
+    main {
+        grid-template-columns: 25rem 1fr;
+        margin: 6rem auto;
+    }    
+
+    .error-icon {
+        right: 1rem;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    body {
+        background-image: url('/images/bg-intro-mobile.png');
+        text-align: center;
+    }   
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .content-text {
+        margin-top: 0;
+    }
+
+    .paragraph {
+        padding: 0.75rem;
+    }
+}
+
+@media screen and (max-width:576px) {
+    body {
+        background-image: url('/images/bg-intro-mobile.png');
+    }
+
+    .title {
+        margin-bottom: 0.5rem;
+        font-size: 1.75rem;
+    }    
+
+    .try-button {
+        padding: 1rem 3rem;
+        line-height: 1.5;
+    }
+
+    .form {
+        padding: 1.5rem;
+    }
+
+    .form-element {
+        margin: 1rem 0;
+    }
+
+    .terms {
+        padding: 1rem 1rem 0;
+    }
+
+    footer {
+        margin-top: 2.5rem;
+    }
+}
+
