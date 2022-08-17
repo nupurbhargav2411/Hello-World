@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: #684BB1;
+    background-image: url('images/bg-desktop.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+}
+
+.site-content {
+    padding: 80px 0;
+}
+
+.container {
+    max-width: 1340px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 40px;
+}
+
+header {
+    padding: 30px 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 -30px;
+}
+
+.row > * {
+    padding: 0 30px;
+}
+
+.col-8 {
+    width: 60%;
+}
+
+.col-4 {
+    width: 40%;
+}
+
+button {
+    padding: 10px 50px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    color: #684BB1;
+    font-size: 18px;
+}
+
+h1 {
+    color: #fff;
+    margin: 0 0 22px;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+p {
+    color: #fff;
+    margin: 0 0 33px;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.landing-page-content {
+    padding: 30px 0;
+}
+
+footer {
+    padding: 30px 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+footer ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 16px 10px 0;
+}
+
+footer ul li:last-child {
+    margin: 10px 0;
+}
+
+footer ul li a {
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    border: 1px solid #fff;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    border-radius: 30px;
+}
+
+@media screen and ( max-width: 991px ) {
+    h1 {
+        font-size: 26px;
+        line-height: 38px;
+    }
+    p{
+        font-size: 17px;
+        line-height: 26px;
+    }
+    button {
+        font-size: 16px;
+    }
+}
+
+@media screen and ( max-width: 767px ) {
+    body {
+        background-size: contain;
+    }
+    header {
+        padding: 20px 0;
+    }
+    header img {
+        width: 160px;
+    }
+    footer {
+        padding: 20px 0;
+        text-align: center;
+    }
+    footer ul {
+        text-align: center;
+    }
+    .site-content {
+        padding: 40px 0;
+        text-align: center;
+    }
+    .col-8 {
+        width: 100%;
+        margin: 0 0 40px;
+    }
+    .landing-page-content {
+        padding: 0;
+    }
+    .col-4 {
+        width: 100%;
+    }
+    h1 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 24px;       
+    }
+    button {
+        font-size: 12px;
+    }
+}
+
